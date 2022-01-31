@@ -3,6 +3,7 @@ import Input from "./Input";
 import {Task} from "./Task";
 import {taskConfig} from "./formConfigs";
 import {api} from "./API";
+import {theme} from "./them";
 
 const getTaskForm = (onTaskCreated) =>
     new Form({
@@ -37,5 +38,6 @@ export class TaskArea {
     addTask(taskData) {
         const task = new Task(taskData);
         task.renderCard(this.tasksContainer);
+        theme(localStorage.theme)
     }
 }
