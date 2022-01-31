@@ -1,0 +1,162 @@
+body {
+
+    margin: 0 auto;
+    text-align: center;
+}
+button{
+    cursor: pointer;
+}
+.auth-form {
+    position: relative;
+    text-align: left;
+    margin: 30px auto;
+    border: 4px solid black;
+    border-radius: 30px;
+    padding: 30px;
+    display: inline-block;
+}
+.text-control{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 20px;
+}
+.input-error{
+    color: red;
+    font-size: 14px;
+}
+.input{
+    font-size: 24px;
+}
+.label{
+    font-size: 18px;
+}
+h2{
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 1.5em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+h3{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.task-description{
+    font-size: 20px;
+}
+button{
+    font-size: 20px;
+}
+.switch{
+    top: 68px;
+    left: -65px;
+    transform: rotate(-90deg);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border: 3px solid black;
+    width: 30%;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+}
+
+.area{
+    display: flex;
+}
+.task-form{
+    text-align: left;
+    width: 40%;
+    height: max-content;
+    padding: 0 20px 20px;
+    margin: 0 15px;
+}
+.btn-form{
+    width: 100%;
+}
+.task-cards{
+    width: 50%;
+    margin: 0 15px;
+}
+.task-card{
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    box-shadow: 0 0 7px 4px #0097ff;
+}
+.header-controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 3.5%;
+}
+.logout-container {
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.logo{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 46px;
+}
+.avatar{
+    color: #28d5cc;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 5px;
+    background: black;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 0 8px;
+
+}
+.logout-btn, .theme-btn{
+    background: black;
+    border: 1px solid white;
+    color: #64f6ff;
+    border-radius: 15px;
+    padding: 0 10px;
+}
+.theme-btn{
+    border-radius: 15px;
+    padding: 0 10px;
+}
+.task-delete-btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    border-radius: 50%;
+    background: #0000005e;
+    font-weight: bold;
+    font-size: 30px;
+    color: red;
+    padding: 3px 7px 0;
+}
+.timer-btn{
+    border: none;
+    margin-right: 20px;
+    border-radius: 50%;
+    background: #0000005e;
+    font-weight: bold;
+    font-size: 20px;
+}
+button:disabled{
+    background: rgba(6, 6, 6, 0.05);
+    color: grey;
+}
+.timer-btn-play{
+    padding: 5px 5px 3px 10px;
+    color: #00ff11;
+}
+.timer-btn-stop{
+    padding: 5px 8px 3px;
+    color: #ff7c00;
+}
