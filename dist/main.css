@@ -287,3 +287,64 @@ button:disabled{
     box-shadow: inset 0 0 7px 4px red;
     text-decoration: line-through;
 }
+/*!***************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/red.css ***!
+  \***************************************************************/
+.red-theme{
+    background: linear-gradient(to left, black 1%, #d600ff 4%,
+    black 4%, black 9%, #d600ff 9%,
+    #d600ff 11%, black 11%, black 13%,
+    #d600ff 13%,#d600ff 15%, black 31%,
+    black 82%, #d600ff 90%, #d600ff 91%,
+    black 91%,black 91.7%, #d600ff 91.7%,
+    #d600ff 92.5%, black 91.5%,
+    black 96.5%, #d600ff 96.5%, #d600ff 97%,
+    black 97%, black 98%, #d600ff 98.5%, black 99.5%
+    );
+}
+.red-theme .header-controls{
+    background: linear-gradient(to top, transparent 5%, #d600ff 20%,
+    transparent 20%, transparent 25%,
+    #d600ff 25%, #d600ff 30%,
+    black 40%, black 80%,
+    #d600ff 80%,#d600ff 85%,
+    transparent
+    )
+}
+.red-theme .task-form, .red-theme .task-card{
+    background: linear-gradient(#00b4b263 10%, #6ccbff 35%, #002c40 90%);
+    box-shadow: 0 0 10px 4px #0097ff;
+}
+.red-theme .auth-form{
+    background: linear-gradient(#00b4b263 10%, #6ccbff 35%, #002c40 90%);
+    box-shadow: #2ab4ff 0 0 9px 5px;
+}
+.red-theme .switch{
+    background: #d600ff;
+}
+.red-theme .btn-form, .red-theme .btn{
+    background: #d600ff;
+}
+.red-theme .logout-container{
+    background: linear-gradient(#78ffdf, #00000000, #00fff2);
+}
+.red-theme .logout-btn{
+    background: black;
+    border: 1px solid white;
+    color: #64f6ff;
+    border-radius: 15px;
+    padding: 0 10px;
+}
+.red-theme .logo{
+    color: #2ffaef;
+}
+.red-theme .active{
+    box-shadow: 0 0 7px 4px green;
+}
+.red-theme .pause{
+    box-shadow: 0 0 7px 4px orange;
+}
+.red-theme .done{
+    box-shadow: 0 0 7px 4px red;
+    text-decoration: line-through;
+}

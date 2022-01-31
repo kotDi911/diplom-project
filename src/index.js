@@ -1,6 +1,7 @@
 import "./main.css"
 import "./dark.css"
 import "./light.css"
+import "./red.css"
 import {api} from "./js/API";
 import Auth from "./js/Auth";
 import {TaskArea} from "./js/TaskArea";
