@@ -38,10 +38,10 @@ export class Task {
         timeTracker.classList.add('time-tracker');
         dateElement.classList.add('task-date');
 
-        this.taskCard.classList.add('task-card', 'light-theme');
+        this.taskCard.classList.add('task-card');
         this.deleteBtn.classList.add('task-delete-btn');
         this.timerBtn.classList.add('timer-btn');
-        this.markAsDoneBtn.classList.add('btn', 'btn-form', 'light-theme');
+        this.markAsDoneBtn.classList.add('btn', 'btn-form');
 
         if (this.isFinished) {
             this.timerBtn.setAttribute("disabled", '');

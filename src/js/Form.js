@@ -23,7 +23,7 @@ class Form {
 
         this.submitBtn.type = "submit";
         this.submitBtn.innerText = submitBtnText;
-        this.submitBtn.classList.add("btn", "btn-form", "light-theme");
+        this.submitBtn.classList.add("btn", "btn-form");
 
         this.form.addEventListener("submit", async (event) => {
             event.preventDefault();

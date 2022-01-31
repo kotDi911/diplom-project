@@ -1,4 +1,4 @@
-body.light-theme{
+.light-theme {
     background: linear-gradient(to left, #aab686 1%, #236e67 4%,
     #aab686 4%, #aab686 9%, #236e67 9%,
     #236e67 11%, #aab686 11%, #aab686 13%,
@@ -10,7 +10,7 @@ body.light-theme{
     #aab686 97%, #aab686 98%, #236e67 98.5%, #aab686 99.5%
     );
 }
-.header-controls.light-theme{
+.light-theme .header-controls{
     background: linear-gradient(to top, transparent 5%, #236e67 20%,
     transparent 20%, transparent 25%,
     #236e67 25%, #236e67 30%,
@@ -19,39 +19,38 @@ body.light-theme{
     transparent
     )
 }
-.task-form.light-theme, .task-card.light-theme{
+.light-theme .task-form, .light-theme .task-card{
     background: linear-gradient(rgba(61, 74, 115, 0.67) 10%, #878787  35%, #d2e4ec  90%);
     box-shadow: inset 0 0 10px 4px #0097ff;
 }
-.auth-form.light-theme{
+.light-theme .auth-form{
     background: linear-gradient(#d2e4ec 10%, #878787 35%, #3d4a73 90%);
     box-shadow: #2ab4ff 0 0 9px 5px;
 }
-
-.switch.light-theme{
+.light-theme .switch{
     background: #72ff8f;
 }
-.btn-form.light-theme, btn.light-theme{
+.light-theme .btn-form, .light-theme .btn{
     background: #72ff8f;
 }
-.logout-container.light-theme{
+.light-theme .logout-container{
     background: linear-gradient(0deg, black, transparent, black);
 }
-.logo.light-theme{
-    color: #1e1c40;
-}
-.logout-btn.light-theme{
+.light-theme .logout-btn{
     background: black;
     border: 1px solid white;
     color: #64f6ff;
 }
-.active.light-theme{
+.light-theme .logo{
+    color: #1e1c40;
+}
+.light-theme .active{
     box-shadow: inset 0 0 7px 4px green;
 }
-.pause.light-theme{
+.light-theme .pause{
     box-shadow: inset 0 0 7px 4px orange;
 }
-.done.light-theme{
+.light-theme .done{
     box-shadow: inset 0 0 7px 4px red;
     text-decoration: line-through;
 }

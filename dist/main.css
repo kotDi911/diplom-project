@@ -2,9 +2,12 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/main.css ***!
   \****************************************************************/
 body {
-
     margin: 0 auto;
     text-align: center;
+}
+.dark-theme, .light-theme{
+    width: 100vw;
+    height: 100vh;
 }
 button{
     cursor: pointer;
@@ -167,7 +170,7 @@ button:disabled{
 /*!****************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/dark.css ***!
   \****************************************************************/
-body.dark-theme{
+.dark-theme{
     background: linear-gradient(to left, black 1%, #d600ff 4%,
     black 4%, black 9%, #d600ff 9%,
     #d600ff 11%, black 11%, black 13%,
@@ -179,7 +182,7 @@ body.dark-theme{
     black 97%, black 98%, #d600ff 98.5%, black 99.5%
     );
 }
-.header-controls.dark-theme{
+.dark-theme .header-controls{
     background: linear-gradient(to top, transparent 5%, #d600ff 20%,
     transparent 20%, transparent 25%,
     #d600ff 25%, #d600ff 30%,
@@ -188,53 +191,47 @@ body.dark-theme{
     transparent
     )
 }
-.task-form.dark-theme, .task-card.dark-theme{
+.dark-theme .task-form, .dark-theme .task-card{
     background: linear-gradient(#00b4b263 10%, #6ccbff 35%, #002c40 90%);
     box-shadow: 0 0 10px 4px #0097ff;
 }
-.auth-form.dark-theme{
+.dark-theme .auth-form{
     background: linear-gradient(#00b4b263 10%, #6ccbff 35%, #002c40 90%);
     box-shadow: #2ab4ff 0 0 9px 5px;
 }
-
-.switch.dark-theme{
+.dark-theme .switch{
     background: #d600ff;
 }
-.btn-form.dark-theme{
+.dark-theme .btn-form, .dark-theme .btn{
     background: #d600ff;
 }
-.logout-container.dark-theme{
+.dark-theme .logout-container{
     background: linear-gradient(#78ffdf, #00000000, #00fff2);
 }
-.logout-btn.dark-theme{
+.dark-theme .logout-btn{
     background: black;
     border: 1px solid white;
     color: #64f6ff;
     border-radius: 15px;
     padding: 0 10px;
 }
-.logo.dark-theme{
+.dark-theme .logo{
     color: #2ffaef;
 }
-.logout-btn.dark-theme{
-    background: black;
-    border: 1px solid white;
-    color: #64f6ff;
-}
-.active.dark-theme{
+.dark-theme .active{
     box-shadow: 0 0 7px 4px green;
 }
-.pause.dark-theme{
+.dark-theme .pause{
     box-shadow: 0 0 7px 4px orange;
 }
-.done.dark-theme{
+.dark-theme .done{
     box-shadow: 0 0 7px 4px red;
     text-decoration: line-through;
 }
 /*!*****************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/light.css ***!
   \*****************************************************************/
-body.light-theme{
+.light-theme {
     background: linear-gradient(to left, #aab686 1%, #236e67 4%,
     #aab686 4%, #aab686 9%, #236e67 9%,
     #236e67 11%, #aab686 11%, #aab686 13%,
@@ -246,7 +243,7 @@ body.light-theme{
     #aab686 97%, #aab686 98%, #236e67 98.5%, #aab686 99.5%
     );
 }
-.header-controls.light-theme{
+.light-theme .header-controls{
     background: linear-gradient(to top, transparent 5%, #236e67 20%,
     transparent 20%, transparent 25%,
     #236e67 25%, #236e67 30%,
@@ -255,39 +252,38 @@ body.light-theme{
     transparent
     )
 }
-.task-form.light-theme, .task-card.light-theme{
+.light-theme .task-form, .light-theme .task-card{
     background: linear-gradient(rgba(61, 74, 115, 0.67) 10%, #878787  35%, #d2e4ec  90%);
     box-shadow: inset 0 0 10px 4px #0097ff;
 }
-.auth-form.light-theme{
+.light-theme .auth-form{
     background: linear-gradient(#d2e4ec 10%, #878787 35%, #3d4a73 90%);
     box-shadow: #2ab4ff 0 0 9px 5px;
 }
-
-.switch.light-theme{
+.light-theme .switch{
     background: #72ff8f;
 }
-.btn-form.light-theme, btn.light-theme{
+.light-theme .btn-form, .light-theme .btn{
     background: #72ff8f;
 }
-.logout-container.light-theme{
+.light-theme .logout-container{
     background: linear-gradient(0deg, black, transparent, black);
 }
-.logo.light-theme{
-    color: #1e1c40;
-}
-.logout-btn.light-theme{
+.light-theme .logout-btn{
     background: black;
     border: 1px solid white;
     color: #64f6ff;
 }
-.active.light-theme{
+.light-theme .logo{
+    color: #1e1c40;
+}
+.light-theme .active{
     box-shadow: inset 0 0 7px 4px green;
 }
-.pause.light-theme{
+.light-theme .pause{
     box-shadow: inset 0 0 7px 4px orange;
 }
-.done.light-theme{
+.light-theme .done{
     box-shadow: inset 0 0 7px 4px red;
     text-decoration: line-through;
 }

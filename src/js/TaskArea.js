@@ -3,7 +3,6 @@ import Input from "./Input";
 import {Task} from "./Task";
 import {taskConfig} from "./formConfigs";
 import {api} from "./API";
-import {theme} from "./them";
 
 const getTaskForm = (onTaskCreated) =>
     new Form({
@@ -28,7 +27,7 @@ export class TaskArea {
         const formContainer = document.createElement('div');
 
         taskArea.classList.add('area');
-        formContainer.classList.add('task-form', 'light-theme');
+        formContainer.classList.add('task-form');
         this.tasksContainer.classList.add('task-cards');
         taskArea.append(formContainer, this.tasksContainer);
         this.taskForm.render(formContainer);
@@ -38,6 +37,5 @@ export class TaskArea {
     addTask(taskData) {
         const task = new Task(taskData);
         task.renderCard(this.tasksContainer);
-        theme(localStorage.theme)
     }
 }

@@ -1,7 +1,10 @@
 body {
-
     margin: 0 auto;
     text-align: center;
+}
+.dark-theme, .light-theme{
+    width: 100vw;
+    height: 100vh;
 }
 button{
     cursor: pointer;

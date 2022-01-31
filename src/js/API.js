@@ -1,5 +1,3 @@
-import {theme, Theme} from "./them";
-
 export const TOKEN_KEY = "token";
 
 class ApiError extends Error {
@@ -129,7 +127,6 @@ class API {
 
     logout() {
         localStorage.removeItem(TOKEN_KEY);
-        theme(localStorage.theme);
     }
 }
 
