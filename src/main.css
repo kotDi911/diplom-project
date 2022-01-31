@@ -2,7 +2,7 @@ body {
     margin: 0 auto;
     text-align: center;
 }
-.dark-theme, .light-theme{
+.dark-theme, .light-theme, .red-theme{
     width: 100vw;
     height: 100vh;
 }
