@@ -19,3 +19,10 @@ export class Theme {
         });
     }
 }
+export const theme = (switchTheme) => {
+    if(switchTheme === "1"){
+        new Theme().darkTheme();
+    }else {
+        new Theme().lightTheme();
+    }
+};

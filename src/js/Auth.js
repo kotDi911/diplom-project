@@ -2,7 +2,7 @@ import {api} from "./API";
 import Form from "./Form";
 import Input from "./Input";
 import {loginConfig, registerConfig} from "./formConfigs";
-import {Theme} from "./them";
+import {Theme, theme} from "./them";
 
 const getLoginForm = (onSuccess) =>
     new Form({
@@ -40,14 +40,20 @@ export class Auth {
         this.form = null;
         this.user = null;
         this.isLogin = true;
-        this.switchTheme = false;
-
 
         this.loginForm = getLoginForm(onLoginSuccess);
         this.registerForm = getRegisterForm(this.renderAuthForm.bind(this));
 
         this.createFormContainer();
         this.createHeaderControls();
+
+        if(this.switchTheme !== "2"){
+            this.switchTheme = "1";
+            console.log("constructor", localStorage.theme);
+        }else {
+            this.switchTheme = localStorage.theme;
+            console.log("constructor", localStorage.theme);
+        }
     }
 
     createFormContainer() {
@@ -72,14 +78,14 @@ export class Auth {
         this.theme.innerText = "theme";
 
         this.theme.addEventListener("click", () => {
-            this.switchTheme = !this.switchTheme;
-            if(this.switchTheme){
-                console.log(this.switchTheme)
+            if(this.switchTheme === "1"){
                new Theme().darkTheme();
-               localStorage.setItem('theme', JSON.stringify(this.switchTheme));
+                localStorage.theme = 1;
+                this.switchTheme = "2"
             }else {
                 new Theme().lightTheme();
-                localStorage.setItem('theme', JSON.stringify(this.switchTheme));
+                localStorage.theme = 2;
+                this.switchTheme = "1"
             }
         });
 
@@ -87,15 +93,17 @@ export class Auth {
             this.logout();
             api.logout();
         });
+
     }
 
     renderHeaderControls() {
         const controlsContainer = document.createElement('div');
         controlsContainer.classList.add('header-controls', 'light-theme');
+
         this.avatar.innerText = this.user.name[0];
         this.logoutContainer.append( this.logoutBtn, this.avatar, this.theme);
         controlsContainer.append(this.logo, this.logoutContainer);
-        this.appContainer.append(controlsContainer)
+        this.appContainer.append(controlsContainer);
     }
 
 
@@ -128,6 +136,12 @@ export class Auth {
         this.isLogin = true;
 
         this.renderAuthForm();
+
+        if(this.switchTheme === "1"){
+            new Theme().darkTheme();
+        }else {
+            new Theme().lightTheme();
+        }
     }
 }
 

@@ -1,5 +1,4 @@
 import { api } from "./API";
-import {Theme} from "./them";
 
 export class Task {
     constructor({

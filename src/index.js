@@ -4,6 +4,7 @@ import "./light.css"
 import {api} from "./js/API";
 import Auth from "./js/Auth";
 import {TaskArea} from "./js/TaskArea";
+import {theme} from "./js/them";
 
 const appContainer = document.createElement('div');
 document.body.append(appContainer);
@@ -12,7 +13,6 @@ const logo = document.createElement('h2');
 logo.innerText = 'byte to-do-list';
 logo.classList.add('logo', 'light-theme');
 appContainer.prepend(logo);
-let switchTheme = localStorage.getItem('theme');
 
 const renderAppLayout = async (user) => {
     auth.user = user;
@@ -34,6 +34,8 @@ const auth = new Auth({
     logo,
 });
 
+
+
 const init = async () => {
     const isLoggedIn = api.isLoggedIn();
     if (isLoggedIn) {
@@ -43,6 +45,7 @@ const init = async () => {
     } else {
         auth.renderAuthForm();
     }
+    theme(localStorage.theme);
 };
 
 init();
