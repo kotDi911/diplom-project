@@ -44,16 +44,23 @@ export class Auth {
         this.loginForm = getLoginForm(onLoginSuccess);
         this.registerForm = getRegisterForm(this.renderAuthForm.bind(this));
 
+        this.baseThem();
+
         this.createFormContainer();
         this.createHeaderControls();
+    }
 
-        if(this.switchTheme !== "2"){
-            this.switchTheme = "1";
+    baseThem(){
+        if(!this.switchTheme){
+            this.switchTheme = "light";
             console.log("constructor", localStorage.theme);
+            console.log("this.switchTheme", this.switchTheme);
         }else {
             this.switchTheme = localStorage.theme;
             console.log("constructor", localStorage.theme);
+            console.log("this.switchTheme", this.switchTheme);
         }
+        return this.switchTheme;
     }
 
     createFormContainer() {
@@ -78,14 +85,15 @@ export class Auth {
         this.theme.innerText = "theme";
 
         this.theme.addEventListener("click", () => {
-            if(this.switchTheme === "1"){
-               new Theme().darkTheme();
-                localStorage.theme = 1;
-                this.switchTheme = "2"
+            this.baseThem();
+            if(this.switchTheme === "dark"){
+                theme(this.switchTheme);
+                this.switchTheme = "light";
+                localStorage.setItem("theme", this.switchTheme)
             }else {
-                new Theme().lightTheme();
-                localStorage.theme = 2;
-                this.switchTheme = "1"
+                theme(this.switchTheme);
+                this.switchTheme = "dark";
+                localStorage.setItem("theme", this.switchTheme)
             }
         });
 
@@ -137,11 +145,7 @@ export class Auth {
 
         this.renderAuthForm();
 
-        if(this.switchTheme === "1"){
-            new Theme().darkTheme();
-        }else {
-            new Theme().lightTheme();
-        }
+        theme(localStorage.getItem("theme"))
     }
 }
 

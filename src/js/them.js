@@ -20,7 +20,7 @@ export class Theme {
     }
 }
 export const theme = (switchTheme) => {
-    if(switchTheme === "1"){
+    if(switchTheme === "dark"){
         new Theme().darkTheme();
     }else {
         new Theme().lightTheme();
