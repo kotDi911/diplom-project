@@ -1,20 +1,13 @@
 .light-theme {
-    background: linear-gradient(to left, #aab686 1%, #236e67 4%,
-    #aab686 4%, #aab686 9%, #236e67 9%,
-    #236e67 11%, #aab686 11%, #aab686 13%,
-    #236e67 13%,#236e67 15%, #aab686 31%,
-    #aab686 82%, #236e67 90%, #236e67 91%,
-    #aab686 91%,#aab686 91.7%, #236e67 91.7%,
-    #236e67 92.5%, #aab686 91.5%,
-    #aab686 96.5%, #236e67 96.5%, #236e67 97%,
-    #aab686 97%, #aab686 98%, #236e67 98.5%, #aab686 99.5%
-    );
+    display: inline-table;
+    background: linear-gradient(to bottom, transparent 80vh, #258079 100vh), url("img/cityday.jpg") no-repeat;
+    background-size: 100vw ;
 }
 .light-theme .header-controls{
     background: linear-gradient(to top, transparent 5%, #236e67 20%,
     transparent 20%, transparent 25%,
     #236e67 25%, #236e67 30%,
-    #aab686 40%, #aab686 80%,
+    #aab68682 40%, #aab68682 80%,
     #236e67 80%,#236e67 85%,
     transparent
     )

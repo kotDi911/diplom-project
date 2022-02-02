@@ -35,7 +35,7 @@ export class Auth {
         this.switchBtn = document.createElement('button');
         this.logoutBtn = document.createElement('button');
         this.avatar = document.createElement('span');
-        this.theme = document.createElement('select');
+        this.theme = document.createElement('button');
 
         this.form = null;
         this.user = null;
@@ -67,16 +67,12 @@ export class Auth {
         this.logoutBtn.innerText = "Logout";
         this.avatar.classList.add('avatar');
         this.theme.classList.add('theme-btn');
-        this.theme.setAttribute("name", 'select');
-        this.theme.innerHTML = `<option value="light" selected>light</option>
-                                <option value="dark">dark</option>
-                                <option value="red">red</option>`;
+        this.theme.innerText = 'theme';
 
-
-        this.theme.addEventListener("change", () => {
-            console.log(this.theme.value)
-            Theme.switchTheme(this.appContainer, this.theme.value)
+        this.theme.addEventListener("click", () => {
+            Theme.switchTheme(this.appContainer)
         });
+
 
         this.logoutBtn.addEventListener("click", () => {
             this.logout();

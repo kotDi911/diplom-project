@@ -1,15 +1,15 @@
-.red-theme{
-    background: linear-gradient(to left, black 1%, red 4%,
-    black 4%, black 9%, red 9%,
-    red 11%, black 11%, black 13%,
-    red 13%,red 15%, black 31%,
-    black 82%, red 90%, red 91%,
-    black 91%,black 91.7%, red 91.7%,
-    red 92.5%, black 91.5%,
-    black 96.5%, red 96.5%, red 97%,
-    black 97%, black 98%, red 98.5%, black 99.5%
-    );
-}
+/*.red-theme{*/
+/*    background: linear-gradient(to left, black 1%, red 4%,*/
+/*    black 4%, black 9%, red 9%,*/
+/*    red 11%, black 11%, black 13%,*/
+/*    red 13%,red 15%, black 31%,*/
+/*    black 82%, red 90%, red 91%,*/
+/*    black 91%,black 91.7%, red 91.7%,*/
+/*    red 92.5%, black 91.5%,*/
+/*    black 96.5%, red 96.5%, red 97%,*/
+/*    black 97%, black 98%, red 98.5%, black 99.5%*/
+/*    );*/
+/*}*/
 .red-theme .header-controls{
     background: linear-gradient(to top, transparent 5%, red 20%,
     transparent 20%, transparent 25%,

@@ -1,14 +1,19 @@
+/*.dark-theme{*/
+/*    background: linear-gradient(to left, black 1%, #d600ff 4%,*/
+/*    black 4%, black 9%, #d600ff 9%,*/
+/*    #d600ff 11%, black 11%, black 13%,*/
+/*    #d600ff 13%,#d600ff 15%, black 31%,*/
+/*    black 82%, #d600ff 90%, #d600ff 91%,*/
+/*    black 91%,black 91.7%, #d600ff 91.7%,*/
+/*    #d600ff 92.5%, black 91.5%,*/
+/*    black 96.5%, #d600ff 96.5%, #d600ff 97%,*/
+/*    black 97%, black 98%, #d600ff 98.5%, black 99.5%*/
+/*    );*/
+/*}*/
 .dark-theme{
-    background: linear-gradient(to left, black 1%, #d600ff 4%,
-    black 4%, black 9%, #d600ff 9%,
-    #d600ff 11%, black 11%, black 13%,
-    #d600ff 13%,#d600ff 15%, black 31%,
-    black 82%, #d600ff 90%, #d600ff 91%,
-    black 91%,black 91.7%, #d600ff 91.7%,
-    #d600ff 92.5%, black 91.5%,
-    black 96.5%, #d600ff 96.5%, #d600ff 97%,
-    black 97%, black 98%, #d600ff 98.5%, black 99.5%
-    );
+    display: inline-table;
+    background: linear-gradient(to bottom, transparent 80vh, black 100vh), url("img/city.png");
+    background-size: 100vw ;
 }
 .dark-theme .header-controls{
     background: linear-gradient(to top, transparent 5%, #d600ff 20%,
